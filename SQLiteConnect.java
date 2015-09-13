@@ -22,7 +22,8 @@ public class SQLiteConnect {
      */
     public static void main(String[] args) {
         try {
-            String host = "jdbc:SQLite:C:\SQLite3\TeamMembers";
+            String host;
+            host = "jdbc:sqlite:C:\\SQLite3\\TeamMembers";
             Connection con = DriverManager.getConnection(host);
             Statement stmt = con.createStatement();
             String SQL = "SELECT * FROM TeamMembers";
